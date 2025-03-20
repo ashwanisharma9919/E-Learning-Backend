@@ -22,7 +22,9 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin: ["http://localhost:5173",
+        "https://e-learning-frontend-nine-self.vercel.app/",
+    ],
     credentials:true
 }));
  
